@@ -1,3 +1,55 @@
+:root {
+  --color-logo-accent: #4d5ae5;
+  --color-foreground: #434455;
+  --color-background: #fff;
+  --color-button-foreground: #4d5ae5;
+  --color-button-background: #f4f4fd;
+  --color-button-hover-focus-foreground: #ffffff;
+  --color-button-hover-focus-background: #404bbf;
+  --color-heading: #2e2f42;
+  --color-footer-background: #2e2f42;
+  --color-team-section-background: #f4f4fd;
+  --color-contact-link-hover-focus-foreground: #4d5ae5;
+  --color-border: #e7e9fc;
+
+  --font-logo: "Raleway", sans-serif;
+  --font-text: "Roboto", sans-serif;
+
+  --font-size-text: 16px;
+  --font-size-logo: 18px;
+  --font-size-main-heading: 56px;
+  --font-size-section-heading: 36px;
+  --font-size-item-heading: 20px;
+
+  --font-weight-main-heading: 700;
+  --font-weight-section-heading: 700;
+  --font-weight-item-heading: 500;
+
+  --line-height-text: 1.5;
+  --line-height-logo: 1.16667;
+  --line-height-main-heading: 1.07143;
+  --line-height-section-heading: 1.11111;
+  --line-height-item-heading: 1.2;
+
+  --letter-spacing-text: 0.32px;
+  --letter-spacing-logo: 0.54px;
+  --letter-spacing-main-heading: 1.12px;
+  --letter-spacing-section-heading: 0.72px;
+  --letter-spacing-item-heading: 0.4px;
+  --letter-spacing-button: 0.64px;
+
+  --text-transform-logo: uppercase;
+  --text-transform-heading: capitalize;
+  --text-transform-button: capitalize;
+  --text-transform-item-role: capitalize;
+}
+
+body {
+  font-family: var(--font-text);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
