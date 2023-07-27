@@ -1,5 +1,5 @@
 :root {
-  --color-logo-accent: #4d5ae5;
+  --color-brand-accent: #4d5ae5;
   --color-foreground: #434455;
   --color-background: #fff;
   --color-button-foreground: #4d5ae5;
@@ -8,6 +8,7 @@
   --color-button-hover-focus-background: #404bbf;
   --color-heading: #2e2f42;
   --color-footer-background: #2e2f42;
+  --color-footer-text: #f4f4fd;
   --color-team-section-background: #f4f4fd;
   --color-contact-link-hover-focus-foreground: #4d5ae5;
   --color-border: #e7e9fc;
@@ -21,6 +22,7 @@
   --font-size-section-heading: 36px;
   --font-size-item-heading: 20px;
 
+  --font-weight-logo: 800;
   --font-weight-main-heading: 700;
   --font-weight-section-heading: 700;
   --font-weight-item-heading: 500;
@@ -58,4 +60,82 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  color: var(--color-button-foreground);
+  background-color: var(--color-button-background);
+  cursor: pointer;
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-item-heading);
+  line-height: var(--line-height-text);
+  letter-spacing: var(--letter-spacing-button);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--color-button-hover-focus-foreground);
+  background-color: var(--color-button-hover-focus-background);
+}
+
+.brand-accent-text {
+  color: var(--color-brand-accent);
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: var(--letter-spacing-text);
+  line-height: var(--line-height-text);
+}
+
+.navigation-link {
+  color: var(--color-heading);
+  font-weight: var(--font-weight-item-heading);
+}
+
+.contact-link {
+  color: var(--color-foreground);
+}
+
+.footer-link {
+  color: var(--color-footer-text);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-brand-accent);
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: var(--font-size-logo);
+  font-weight: var(--font-weight-logo);
+  line-height: var(--line-height-logo);
+  letter-spacing: var(--letter-spacing-logo);
+  text-transform: var(--text-transform-logo);
+}
+
+.footer {
+  color: var(--color-footer-text);
+  background-color: var(--color-footer-background);
+}
+
+.heading {
+  text-transform: var(--text-transform-heading);
+}
+
+.item-heading {
+  font-size: var(--font-size-item-heading);
+  font-weight: var(--font-weight-item-heading);
+  line-height: var(--line-height-item-heading);
+  letter-spacing: var(--letter-spacing-item-heading);
+}
+
+.item-role {
+  text-transform: var(--text-transform-item-role);
 }
