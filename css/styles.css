@@ -33,12 +33,9 @@
   --line-height-section-heading: 1.11111;
   --line-height-item-heading: 1.2;
 
-  --letter-spacing-text: 0.32px;
-  --letter-spacing-logo: 0.54px;
-  --letter-spacing-main-heading: 1.12px;
-  --letter-spacing-section-heading: 0.72px;
-  --letter-spacing-item-heading: 0.4px;
-  --letter-spacing-button: 0.64px;
+  --letter-spacing-text: 0.02em;
+  --letter-spacing-logo: 0.03em;
+  --letter-spacing-button: 0.04em;
 
   --text-transform-logo: uppercase;
   --text-transform-heading: capitalize;
@@ -50,6 +47,7 @@ body {
   font-family: var(--font-text);
   color: var(--color-foreground);
   background-color: var(--color-background);
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -66,6 +64,10 @@ body {
   list-style: none;
 }
 
+.list-item {
+  background-color: var(--color-background);
+}
+
 .btn {
   color: var(--color-button-foreground);
   background-color: var(--color-button-background);
@@ -74,6 +76,7 @@ body {
   font-weight: var(--font-weight-item-heading);
   line-height: var(--line-height-text);
   letter-spacing: var(--letter-spacing-button);
+  text-align: center;
 }
 
 .btn:hover,
@@ -89,8 +92,12 @@ body {
 .link {
   text-decoration: none;
   font-style: normal;
-  letter-spacing: var(--letter-spacing-text);
   line-height: var(--line-height-text);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-brand-accent);
 }
 
 .navigation-link {
@@ -104,11 +111,6 @@ body {
 
 .footer-link {
   color: var(--color-footer-text);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--color-brand-accent);
 }
 
 .logo {
@@ -133,9 +135,34 @@ body {
   font-size: var(--font-size-item-heading);
   font-weight: var(--font-weight-item-heading);
   line-height: var(--line-height-item-heading);
-  letter-spacing: var(--letter-spacing-item-heading);
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.main-heading {
+  font-size: var(--font-size-main-heading);
+  font-weight: var(--font-weight-main-heading);
+  line-height: var(--line-height-main-heading);
 }
 
 .item-role {
   text-transform: var(--text-transform-item-role);
+}
+
+.team-list-item {
+  text-align: center;
+}
+
+.section {
+  background-color: var(--color-background);
+}
+
+.section.team-section {
+  background-color: var(--color-team-section-background);
+}
+
+.header {
+  background-color: var(--color-background);
 }
