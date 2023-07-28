@@ -205,5 +205,6 @@ body {
 }
 
 .footer p {
+  color: var(--color-footer-text);
   line-height: 1.5;
 }
