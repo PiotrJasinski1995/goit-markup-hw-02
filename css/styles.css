@@ -8,6 +8,7 @@
   --color-filter-button-background: #f4f4fd;
   --color-button-hover-foreground: #ffffff;
   --color-button-hover-background: #404bbf;
+  --color-link-hover-foreground: #404bbf;
   --color-heading: #2e2f42;
   --color-main-page-main-heading: #fff;;
   --color-main-page-main-section: #2E2F42;
@@ -54,18 +55,6 @@ body {
   letter-spacing: var(--letter-spacing-text);
 }
 
-/* screen readers only
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-*/
-
 .list {
   list-style: none;
 }
@@ -95,10 +84,16 @@ body {
 }
 
 .btn:hover,
-.btn:focus
+.btn:focus,
 .btn:active {
   color: var(--color-button-hover-foreground);
   background-color: var(--color-button-hover-background);
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--color-link-hover-foreground);
 }
 
 .link {
@@ -110,25 +105,22 @@ body {
   font-style: normal;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--color-brand-accent);
-}
-
 .navigation-link {
   color: var(--color-heading);
+  font-size: var(--font-size-text);
   font-weight: var(--font-weight-item-heading);
 }
 
 .contact-link {
   color: var(--color-foreground);
+  font-size: var(--font-size-text);
 }
 
-.header .logo > span {
+.header .logo > .studio-element {
   color: var(--color-heading);
 }
 
-.footer .logo > span {
+.footer .logo > .studio-element {
   color: var(--color-footer-text);
 }
 
@@ -151,7 +143,7 @@ body {
   color: var(--color-heading);
 }
 
-.item-heading {
+.heading.item-heading {
   font-size: var(--font-size-item-heading);
   font-weight: var(--font-weight-item-heading);
   line-height: var(--line-height-item-heading);
@@ -162,8 +154,6 @@ body {
   font-size: var(--font-size-section-heading);
   font-weight: var(--font-weight-section-heading);
   line-height: var(--line-height-section-heading);
-
-
 }
 
 .main-heading {
@@ -176,8 +166,16 @@ body {
   color: var(--color-main-page-main-heading);
 }
 
-.item-role {
+.list-item .item-role {
+  color: var(--color-foreground);
   text-transform: var(--text-transform-item-role);
+  font-size: var(--font-size-text);
+  line-height: 1.5;
+}
+
+.item-description {
+  line-height: 1.5;
+  font-size: var(--font-size-text);
 }
 
 .team-list-item {
@@ -200,11 +198,8 @@ body {
   background-color: var(--color-background);
 }
 
-.list p {
-  line-height: 1.5;
-}
-
-.footer p {
+.footer .footer-text {
   color: var(--color-footer-text);
+  font-size: var(--font-size-text);
   line-height: 1.5;
 }
