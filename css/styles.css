@@ -10,8 +10,8 @@
   --color-button-hover-background: #404bbf;
   --color-link-hover-foreground: #404bbf;
   --color-heading: #2e2f42;
-  --color-main-page-main-heading: #fff;;
-  --color-main-page-main-section: #2E2F42;
+  --color-main-page-main-heading: #fff;
+  --color-main-page-main-section: #2e2f42;
   --color-footer-background: #2e2f42;
   --color-footer-text: #f4f4fd;
   --color-team-section-background: #f4f4fd;
@@ -52,7 +52,6 @@ body {
   font-family: var(--font-family-text);
   color: var(--color-foreground);
   background-color: var(--color-background);
-  letter-spacing: var(--letter-spacing-text);
 }
 
 .list {
@@ -109,11 +108,13 @@ body {
   color: var(--color-heading);
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-item-heading);
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .contact-link {
   color: var(--color-foreground);
   font-size: var(--font-size-text);
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .header .logo > .studio-element {
@@ -139,8 +140,9 @@ body {
 }
 
 .heading {
-  text-transform: var(--text-transform-heading);
   color: var(--color-heading);
+  letter-spacing: var(--letter-spacing-text);
+  text-transform: var(--text-transform-heading);
 }
 
 .heading.item-heading {
@@ -160,6 +162,7 @@ body {
   font-size: var(--font-size-main-heading);
   font-weight: var(--font-weight-main-heading);
   line-height: var(--line-height-main-heading);
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .main-page-main-section .section-heading {
@@ -168,14 +171,16 @@ body {
 
 .list-item .item-role {
   color: var(--color-foreground);
-  text-transform: var(--text-transform-item-role);
   font-size: var(--font-size-text);
   line-height: 1.5;
+  letter-spacing: var(--letter-spacing-text);
+  text-transform: var(--text-transform-item-role);
 }
 
-.item-description {
-  line-height: 1.5;
+.list-item .item-description {
   font-size: var(--font-size-text);
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing-text);
 }
 
 .team-list-item {
@@ -202,4 +207,5 @@ body {
   color: var(--color-footer-text);
   font-size: var(--font-size-text);
   line-height: 1.5;
+  letter-spacing: var(--letter-spacing-text);
 }
